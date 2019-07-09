@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../wp/resources/Css/feedback.css">
+    <script src="../wp/resources/Js/feedbackscript.js"></script>
+    <title>ISQIP Feedback Form</title>
+</head>
+<body>
+    <header class="flex" style="margin-top:15px;">
+        <a href="https://isqip.cecieee.org/"><img src="resources/Images/logo.png" alt="cecisqip" class="logo"></a> 
+        <h1>Feedback</h1>
+    </header>
+    <hr> <br><br>
+    <main class="card ">
+        <div class="contents">
+            <form action="" method="POST" id="f_form" onsubmit="return danger()">
+                Name<sup style="color:red;">*</sup>:
+                <input type="text" name="name" id="user-name" class="bar"> <span id="danger1" class="red"></span> <br> <br>
+                IEEE-ID<sup style="color:red;">*</sup> : <span style="color:grey;"> #</span><input type="text" id="id" class="bar" style="width:15%; margin-left: 5px;" ><span id="danger2" class="red"></span>
+                 <br><br>
+                Which <span class="tclr"> ISQIP</span> did you participate: <br>
+                                <input type="radio" name="radio" class="radio" >CS<br>
+                                <input type="radio" name="radio" class="radio">EC <br>
+                                <input type="radio" name="radio" class="radio">EEE <br>
+                                <input type="radio" name="radio" class="radio">EI <br><br>
+                
+                How was your <span class="tclr"> ISQIP</span> experience? <br>
+                <textarea name="feedbackb" id="brief-feed" cols="30" rows="10" placeholder="Give a brief feedback" class="textarea"></textarea><br><br>
+                How good was your <span class="tclr"> ISQIP</span> workshops? <br>
+                <textarea name="feedbackb" id="brief-feed" cols="30" rows="10" placeholder="Give a brief feedback" class="textarea"></textarea><br><br>
+                Rate <span class="tclr">ISQIP</span> 2019<input type="range" min="1" max="10" value="5" id="ranges"> <span id="valp"></span> <br><br>
+                <div class="sub_bt"><input type="submit" value="SUBMIT YOUR FEEDBACK" id="btn"></div>
+            </form>
+        </div>
+    </main>
+    <script>
+            var slider = document.getElementById("ranges");
+            var output = document.getElementById("valp");
+            output.innerHTML = slider.value;
+    
+            slider.oninput = function() {   
+            output.innerHTML = this.value;
+            }
+    </script>
+</body>
+</html>

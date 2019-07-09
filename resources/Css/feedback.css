@@ -1,0 +1,138 @@
+html,body{
+    overflow-x:hidden; 
+}
+body{
+    background-image: url("../Images/bg.png");
+    color:#242424;
+    margin:0;
+}
+.logo{
+    height:45px;
+    padding-top:15px;
+    width:auto;
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+}
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: inline;
+
+}
+.card{
+    width:60%;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin-left:auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+    
+}
+
+.contents{
+    padding:7%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 150%;
+    font-weight: 5px;
+}
+
+.bar{
+    font-size: 90%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+    width:60%;
+    background-color: transparent;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid grey;
+    margin-left: 14px;
+    }
+
+.radio{
+    margin-top:2%;
+    }
+.textarea{
+    color:black;
+    width: 100%;
+    margin-top:10px;
+    background-color: transparent;
+    border-color: #242424;
+    border-radius: 20px;
+    padding: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.tclr{
+    color:#e5451c;   
+}
+.sub_bt{
+    display:flex;
+    justify-content: center;
+}
+#btn{
+    height: 50px;
+    width:200px;
+    background-color:transparent;
+    color: black;
+    border-radius: 20px;
+    color:#e5451c;
+    border: 2px solid #e5451c;
+    cursor: pointer;
+}
+#btn:hover{
+    background:#242424;
+    color:white;
+    border: 2px solid #242424;
+    transition: 0.5s;
+}
+hr{
+    width:55%; color: rgba(129, 123, 123, 0.486);
+}
+.red{
+    color:red;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+#ranges{
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+
+
+/*Making a better experience in smaller screen*/
+
+@media only screen and (max-width: 500px){
+    .card{
+        width:90%;
+
+    }
+    hr{
+        width:86%;
+    }
+    #ranges{
+        margin-top: 12px;
+    }
+    #id{
+        width:30%!important;
+    }
+    #ranges{
+        margin-left: 13px;
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 960px){
+    .card{
+        width:75%;
+    }
+    hr{
+        width:86%;
+    }
+    #id{
+        width: 30%!important; 
+    }
+}
